@@ -1,0 +1,24 @@
+[2024-05-07T16:22:02.595+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-07T16:22:02.607+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sensor_sleep.wait_time scheduled__2024-05-07T16:21:00+00:00 [queued]>
+[2024-05-07T16:22:02.613+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sensor_sleep.wait_time scheduled__2024-05-07T16:21:00+00:00 [queued]>
+[2024-05-07T16:22:02.613+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-07T16:22:02.625+0000] {taskinstance.py:2330} INFO - Executing <Task(TimeDeltaSensor): wait_time> on 2024-05-07 16:21:00+00:00
+[2024-05-07T16:22:02.630+0000] {standard_task_runner.py:63} INFO - Started process 1217 to run task
+[2024-05-07T16:22:02.637+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sensor_sleep', 'wait_time', 'scheduled__2024-05-07T16:21:00+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/sensor_sleep.py', '--cfg-path', '/tmp/tmp34jyjto6']
+[2024-05-07T16:22:02.641+0000] {standard_task_runner.py:91} INFO - Job 70: Subtask wait_time
+[2024-05-07T16:22:02.684+0000] {task_command.py:426} INFO - Running <TaskInstance: sensor_sleep.wait_time scheduled__2024-05-07T16:21:00+00:00 [running]> on host d1aba41f8dcb
+[2024-05-07T16:22:02.739+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sensor_sleep' AIRFLOW_CTX_TASK_ID='wait_time' AIRFLOW_CTX_EXECUTION_DATE='2024-05-07T16:21:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-07T16:21:00+00:00'
+[2024-05-07T16:22:02.741+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-07T16:22:02.741+0000] {time_delta.py:51} INFO - Checking if the time (2024-05-07 16:22:30+00:00) has come
+[2024-05-07T16:22:07.743+0000] {time_delta.py:51} INFO - Checking if the time (2024-05-07 16:22:30+00:00) has come
+[2024-05-07T16:22:12.744+0000] {time_delta.py:51} INFO - Checking if the time (2024-05-07 16:22:30+00:00) has come
+[2024-05-07T16:22:17.746+0000] {time_delta.py:51} INFO - Checking if the time (2024-05-07 16:22:30+00:00) has come
+[2024-05-07T16:22:22.748+0000] {time_delta.py:51} INFO - Checking if the time (2024-05-07 16:22:30+00:00) has come
+[2024-05-07T16:22:27.750+0000] {time_delta.py:51} INFO - Checking if the time (2024-05-07 16:22:30+00:00) has come
+[2024-05-07T16:22:32.751+0000] {time_delta.py:51} INFO - Checking if the time (2024-05-07 16:22:30+00:00) has come
+[2024-05-07T16:22:32.752+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-05-07T16:22:32.752+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-07T16:22:32.762+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sensor_sleep, task_id=wait_time, run_id=scheduled__2024-05-07T16:21:00+00:00, execution_date=20240507T162100, start_date=20240507T162202, end_date=20240507T162232
+[2024-05-07T16:22:32.800+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-07T16:22:32.818+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-07T16:22:32.819+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

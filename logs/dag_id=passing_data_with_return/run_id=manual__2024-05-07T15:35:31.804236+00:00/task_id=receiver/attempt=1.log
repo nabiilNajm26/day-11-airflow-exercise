@@ -1,0 +1,18 @@
+[2024-05-07T15:35:34.076+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-07T15:35:34.089+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: passing_data_with_return.receiver manual__2024-05-07T15:35:31.804236+00:00 [queued]>
+[2024-05-07T15:35:34.095+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: passing_data_with_return.receiver manual__2024-05-07T15:35:31.804236+00:00 [queued]>
+[2024-05-07T15:35:34.095+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-07T15:35:34.103+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): receiver> on 2024-05-07 15:35:31.804236+00:00
+[2024-05-07T15:35:34.109+0000] {standard_task_runner.py:63} INFO - Started process 435 to run task
+[2024-05-07T15:35:34.111+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'passing_data_with_return', 'receiver', 'manual__2024-05-07T15:35:31.804236+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/passing_data_with_return.py', '--cfg-path', '/tmp/tmphv7jr9ji']
+[2024-05-07T15:35:34.113+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask receiver
+[2024-05-07T15:35:34.143+0000] {task_command.py:426} INFO - Running <TaskInstance: passing_data_with_return.receiver manual__2024-05-07T15:35:31.804236+00:00 [running]> on host d1aba41f8dcb
+[2024-05-07T15:35:34.199+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='passing_data_with_return' AIRFLOW_CTX_TASK_ID='receiver' AIRFLOW_CTX_EXECUTION_DATE='2024-05-07T15:35:31.804236+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-07T15:35:31.804236+00:00'
+[2024-05-07T15:35:34.201+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-07T15:35:34.202+0000] {logging_mixin.py:188} INFO - DATA DARI SENDER: {'nama': 'dibimbing', 'divisi': 'DE'}
+[2024-05-07T15:35:34.202+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-07T15:35:34.202+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-07T15:35:34.208+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=passing_data_with_return, task_id=receiver, run_id=manual__2024-05-07T15:35:31.804236+00:00, execution_date=20240507T153531, start_date=20240507T153534, end_date=20240507T153534
+[2024-05-07T15:35:34.252+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-07T15:35:34.266+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-07T15:35:34.268+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
